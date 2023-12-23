@@ -24,3 +24,8 @@ func (d deck) print() {
 		fmt.Println(i, card)
 	}
 }
+
+//(Parametros entrada) (Tipo de retorno)
+func deal(d deck, handSize int) (deck, deck) {
+	return d[:handSize], d[handSize:]
+}
